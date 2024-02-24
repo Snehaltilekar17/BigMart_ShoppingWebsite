@@ -29,8 +29,7 @@ if (isset($_POST['upload'])) {
     // Execute query
     mysqli_query($db, $sql);
 
-    // $result = $conn->mysqli_query($db,$sql);
-    //if ($result == TRUE) {
+
 
     // Now let's move the uploaded image into the folder: image
     if (move_uploaded_file($tempname, $folder)) {
